@@ -1,0 +1,1 @@
+YUI.add("gallery-faulting-model-list",function(a){},"@VERSION@",{requires:["model-list"]});

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<title>Faulting Model List Tests</title>
+<body class="yui3-skin-sam">
+    <h1>Faulting Model List Tests</h1>
+    <div id="log"></div>
+</body>
+</html>
+<script src="../../../../../src/yui3/build/yui/yui-min.js"></script>
+<script src="../../../build/gallery-faulting-model-list/gallery-faulting-model-list-min.js"></script>
+<script src="faulting_model_list_tests.js"></script>
+<script>
+YUI().use(
+    'faulting-model-list-tests',
+    'test-console',
+    
+function (Y) {
+    new Y.Test.Console({
+        filters: {
+            pass: true,
+            fail: true
+        }
+    }).render('#log');
+
+    Y.Test.Runner.run();
+});
+</script>
